@@ -81,23 +81,23 @@ public class Deque<Item> implements Iterable<Item> {
     // unit testing (required)
     public static void main(String[] args) {
     	Deque <Integer> test = new Deque <>();
-    	test.addFirst(1);
+    	test.addFirst(3);
     	test.addFirst(2);
+    	test.addFirst(1);
+    	test.addLast(6);
+    	test.addLast(5);
+    	test.addLast(4);
+    	
     	Iterator <Integer>itr = test.iterator() ;
     	while (itr.hasNext()) {
     		System.out.println(itr.next());
     	}
     	System.out.println("");
-    	test.removeFirst();
-    	test.removeLast();
+    	System.out.println(test.removeFirst());
+    	System.out.println(test.removeLast());
     	
-    	itr = test.iterator();
-    	//itr.remove();
-    	while (itr.hasNext()) {
-    		System.out.println(itr.next());
-    		itr.remove();
-    	}
-
+    	
+ 
     	
     }
     
